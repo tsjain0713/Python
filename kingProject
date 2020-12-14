@@ -1,0 +1,34 @@
+kingName = input("Greetings King, please enter your name")
+numberJewels = input("Hey King" + " " + kingName + " " + "how many jewels are there?")
+numberJewels = int(numberJewels) #convert string type to int
+costofeachJewel = input("Hey King" + " " + kingName + " " + "How much does each Jewel cost?")
+costofeachJewel = int(costofeachJewel) 
+totalCost = numberJewels * costofeachJewel
+print(totalCost)
+
+dudeNames = ["Athos", "Pothos", "Aramis"]
+dudeAges  = [55, 34, 67]
+dudeNames.insert(0,"D'Artagnan")
+print(dudeNames)
+print(len(dudeAges))
+dudeAges.insert(len(dudeAges),16)
+print(dudeAges)
+
+tempvariable = dudeNames.pop(0)
+dudeNames.append(tempvariable)
+print(dudeNames)
+
+print("Total Dude Names:" + str(len(dudeNames)))
+
+kingNumber = input("Pick a number within 1 and 4")
+kingNumber = int(kingNumber)
+if kingNumber <1 or kingNumber>4:
+    print("Please choose a number within 1 and 4")
+else:
+    pythonKingnumber = (kingNumber-1)
+    print(dudeNames[pythonKingnumber] + " is dead, RIP my dude")
+    dudeNames.pop(pythonKingnumber)
+print(dudeNames)
+
+
+
