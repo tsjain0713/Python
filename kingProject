@@ -18,6 +18,9 @@ tempvariable = dudeNames.pop(0)
 dudeNames.append(tempvariable)
 print(dudeNames)
 
+for onedudename in dudeNames:
+    print("This dude's name is " + onedudename + " inside the for loop")
+
 print("Total Dude Names:" + str(len(dudeNames)))
 
 kingNumber = input("Pick a number within 1 and 4")
